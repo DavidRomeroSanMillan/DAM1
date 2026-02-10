@@ -62,7 +62,7 @@ public class UsuarioTest {
     void nombreNullLanzaExcepcion() {
 
         assertThrows(IllegalArgumentException.class, () -> {
-            new Usuario("", 20);
+            new Usuario(null, 20);
 
         }, "Error");
     }
