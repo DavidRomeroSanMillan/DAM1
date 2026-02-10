@@ -53,7 +53,7 @@ public class UsuarioTest {
     @Test
     void nombreVacioLanzaExcepcion() {
         assertThrows(IllegalArgumentException.class, () -> {
-            new Usuario("h",20);
+            new Usuario("",20);
         }, "Fallo del test");
     }
 
